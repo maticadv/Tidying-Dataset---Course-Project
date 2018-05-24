@@ -1,0 +1,103 @@
+# Codebook:
+
+There are 81 columns in the new data set, each representing a particular computed mean of measured values.
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag).
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals).
+
+These signals were used to estimate variables of the feature vector for each pattern:
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+The columns starting with time represent the mean of the time in which the event occurred, measured at a constant rate of 50Hz.
+The columns starting with frequency represent the mean of the values on which a FFT was applied, so they are signals in the frequency domain.
+The data are collected from an accelerometer and a gyroscope, in the three directions x, y, and z.
+The accelerations by body and gravity are split in different variables.
+The body linear acceleration and angular velocity are derived to obtain jerk signals.
+The magnitudes of these signals are calculated using Euclidean Norm.
+Of all the data contained in the original dataset, only mean and std values are used. The presence of meanfrequency means that this frequency is a weighted average of the frequency components. The last two columns are the activity and the subject who did it.
+
+timebodyaccelerometermeandirectionx
+timebodyaccelerometermeandirectiony
+timebodyaccelerometermeandirectionz
+timebodyaccelerometerstddirectionx
+timebodyaccelerometerstddirectiony
+timebodyaccelerometerstddirectionz
+timegravityaccelerometermeandirectionx
+timegravityaccelerometermeandirectiony
+timegravityaccelerometermeandirectionz
+timegravityaccelerometerstddirectionx
+timegravityaccelerometerstddirectiony
+timegravityaccelerometerstddirectionz
+timebodyaccelerometerjerksignalmeandirectionx
+timebodyaccelerometerjerksignalmeandirectiony
+timebodyaccelerometerjerksignalmeandirectionz
+timebodyaccelerometerjerksignalstddirectionx
+timebodyaccelerometerjerksignalstddirectiony
+timebodyaccelerometerjerksignalstddirectionz
+timebodygyroscopemeandirectionx
+timebodygyroscopemeandirectiony
+timebodygyroscopemeandirectionz
+timebodygyroscopestddirectionx
+timebodygyroscopestddirectiony
+timebodygyroscopestddirectionz
+timebodygyroscopejerksignalmeandirectionx
+timebodygyroscopejerksignalmeandirectiony
+timebodygyroscopejerksignalmeandirectionz
+timebodygyroscopejerksignalstddirectionx
+timebodygyroscopejerksignalstddirectiony
+timebodygyroscopejerksignalstddirectionz
+timebodyaccelerometermagnitudemean
+timebodyaccelerometermagnitudestd
+timegravityaccelerometermagnitudemean
+timegravityaccelerometermagnitudestd
+timebodyaccelerometerjerksignalmagnitudemean
+timebodyaccelerometerjerksignalmagnitudestd
+timebodygyroscopemagnitudemean
+timebodygyroscopemagnitudestd
+timebodygyroscopejerksignalmagnitudemean
+timebodygyroscopejerksignalmagnitudestd
+frequencybodyaccelerometermeandirectionx
+frequencybodyaccelerometermeandirectiony
+frequencybodyaccelerometermeandirectionz
+frequencybodyaccelerometerstddirectionx
+frequencybodyaccelerometerstddirectiony
+frequencybodyaccelerometerstddirectionz
+frequencybodyaccelerometermeanfrequencydirectionx
+frequencybodyaccelerometermeanfrequencydirectiony
+frequencybodyaccelerometermeanfrequencydirectionz
+frequencybodyaccelerometerjerksignalmeandirectionx
+frequencybodyaccelerometerjerksignalmeandirectiony
+frequencybodyaccelerometerjerksignalmeandirectionz
+frequencybodyaccelerometerjerksignalstddirectionx
+frequencybodyaccelerometerjerksignalstddirectiony
+frequencybodyaccelerometerjerksignalstddirectionz
+frequencybodyaccelerometerjerksignalmeanfrequencydirectionx
+frequencybodyaccelerometerjerksignalmeanfrequencydirectiony
+frequencybodyaccelerometerjerksignalmeanfrequencydirectionz
+frequencybodygyroscopemeandirectionx
+frequencybodygyroscopemeandirectiony
+frequencybodygyroscopemeandirectionz
+frequencybodygyroscopestddirectionx
+frequencybodygyroscopestddirectiony
+frequencybodygyroscopestddirectionz
+frequencybodygyroscopemeanfrequencydirectionx
+frequencybodygyroscopemeanfrequencydirectiony
+frequencybodygyroscopemeanfrequencydirectionz
+frequencybodyaccelerometermagnitudemean
+frequencybodyaccelerometermagnitudestd
+frequencybodyaccelerometermagnitudemeanfrequency
+frequencybodybodyaccelerometerjerksignalmagnitudemean
+frequencybodybodyaccelerometerjerksignalmagnitudestd
+frequencybodybodyaccelerometerjerksignalmagnitudemeanfrequency
+frequencybodybodygyroscopemagnitudemean
+frequencybodybodygyroscopemagnitudestd
+frequencybodybodygyroscopemagnitudemeanfrequency
+frequencybodybodygyroscopejerksignalmagnitudemean
+frequencybodybodygyroscopejerksignalmagnitudestd
+frequencybodybodygyroscopejerksignalmagnitudemeanfrequency
+activity
+subject
+For example, frequencybodyaccelerometerjerksignalmeanfrequencydirectiony is the mean of all the weighted averages of the frequency components of the jerk signals of the FTT of the body acceleration in direction Y (coming from the accelerometer).
+
+Another easier example, timebodygyroscopestddirectionx is the mean of all the standard deviations in the body measurements of the gyroscope in direction X.
